@@ -7,6 +7,7 @@
 //
 
 #import "LBViewController.h"
+#import "LBLoadingIskandar.h"
 
 @interface LBViewController ()
 
@@ -17,7 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    LBLoadingIskandar *l = [[LBLoadingIskandar alloc] initWithFrame:CGRectMake(100, 100, 200.0/3.0, 264.0/3.0)];
+    [self.view addSubview:l];
 }
 
 - (void)didReceiveMemoryWarning
