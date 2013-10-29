@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    LBLoadingIskandar *l = [[LBLoadingIskandar alloc] initWithFrame:CGRectMake(100, 100, 200.0/3.0, 264.0/3.0)];
+    LBLoadingIskandar *l = [[LBLoadingIskandar alloc] initWithFrame:CGRectMake(100, 100, 150.0/2.0, 198.0/2.0)];
     [self.view addSubview:l];
 }
 
