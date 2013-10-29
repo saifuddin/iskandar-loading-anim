@@ -14,12 +14,12 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        for (int i = 0; i < 4; i++)
+        for (int i = 1; i <= 4; i++)
         {
-            NSString *imgName = [NSString stringWithFormat:@"%d.png",i];
+            NSString *imgName = [NSString stringWithFormat:@"logopart%d.png",i];
             UIImage *img = [UIImage imageNamed:imgName];
             UIImageView *imgView = [[UIImageView alloc] initWithImage:img];
-            imgView.tag = i+1;
+            imgView.tag = i;
             imgView.alpha = 0;
             imgView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
             [self addSubview:imgView];
